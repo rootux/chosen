@@ -810,7 +810,7 @@ Copyright (c) 2011 by Harvest
             if (regex.test(option.html)) {
               found = true;
               results += 1;
-            } else if (option.html.indexOf(" ") >= 0 || option.html.indexOf("[") === 0) {
+            } else if (option.html.indexOf(" ") >= 0 || option.html.indexOf("[") === 0 || option.html.indexOf("-") >= 0) {
               parts = option.html.replace(/\[|\]/g, "").split(/[\s-]+/);
               if (parts.length) {
                 for (_j = 0, _len2 = parts.length; _j < _len2; _j++) {
